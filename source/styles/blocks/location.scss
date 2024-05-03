@@ -1,0 +1,20 @@
+.location {
+
+}
+
+.location__description {
+  font-family: $headers-font;
+  color: $dark-color-text;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.location__adress-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.location--bg-color {
+  background-color: $bg-basic-grey;
+}

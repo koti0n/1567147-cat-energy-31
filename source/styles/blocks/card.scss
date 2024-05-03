@@ -1,0 +1,12 @@
+.card {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__title {
+  font-family: $headers-font;
+  color: $sub-color-text;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
