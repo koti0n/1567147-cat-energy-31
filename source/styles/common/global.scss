@@ -1,11 +1,15 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-
 body {
   font-family: $main-font;
   color: $base-color-text;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+* {
+  box-sizing: border-box;
 }

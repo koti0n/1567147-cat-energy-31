@@ -1,5 +1,7 @@
 .location {
-
+  &--bg-color {
+    background-color: $bg-basic-grey;
+  }
 }
 
 .location__description {
@@ -13,8 +15,4 @@
 .location__adress-text {
   font-size: 14px;
   line-height: 20px;
-}
-
-.location--bg-color {
-  background-color: $bg-basic-grey;
 }
