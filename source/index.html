@@ -17,11 +17,9 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header__logo-wrapper">
-        <a class="main-header__logo-image" href="index.html">
-          <img class="logo-image" src="#" width="33" height="38" alt="logo-image">
-        </a>
-        <a class="main-header__logo-text logo" href="index.html">
-          <img class="logo-text" src="#" width="101" height="18" alt="logo-text">
+        <a class="main-header__logo logo" href="index.html" alt="logotype"></a>
+        <img class="logo-image" src="#" width="33" height="38" alt="logo-image">
+        <img class="logo-text" src="#" width="101" height="18" alt="logo-text">
         </a>
       </div>
 
@@ -38,15 +36,19 @@
 
   <main class="main">
     <section class="promo">
+      <div class="promo__background">
+        <div class="container">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+        </div>
+      </div>
       <div class="container">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__text">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width: 1440px)" width="522" height="499" type="image/png" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
           <img class="promo__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм cat energy pro">
         </picture>
-        <a class="promo__button button button--primary" href="#">Подобрать программу</a>
+        <a class="promo__button button button--primary button--big" href="#">Подобрать программу</a>
       </div>
     </section>
 
@@ -100,11 +102,11 @@
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <ul class="example__list">
           <li class="example__item">
-            <h3 class="example__title">5 КГ</h3>
+            <h3 class="example__subtitle">5 кг</h3>
             <p class="example__explanation">снижение веса</p>
           </li>
           <li class="example__item">
-            <h3 class="example__title">60 ДНЕЙ</h3>
+            <h3 class="example__subtitle">60 дней</h3>
             <p class="example__explanation">затрачено времени</p>
           </li>
         </ul>
