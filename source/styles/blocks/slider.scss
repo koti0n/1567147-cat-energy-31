@@ -1,3 +1,64 @@
 .slider {
+  position: relative;
+}
 
+.slider__button {
+  height: 100%;
+  width: 4px;
+  padding: 0;
+  background-color: $icon-grey-color;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $white-color-text;
+    border: 2px solid $icon-grey-color;
+  }
+
+  &::after {
+    width: 24px;
+    height: 18px;
+    background-color: $icon-grey-color;
+    mask-image: url("../../icons/stack.svg#slider-arrows");
+    mask-size: 24px 18px;
+  }
+
+  &:hover,
+  &:hover::after {
+    background-color: $bg-basic-green;
+  }
+
+  &:hover::before {
+    border: 2px solid $bg-basic-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+    background-color: $bg-basic-green;
+  }
+
+  &:active::after {
+    background-color: $bg-basic-green;
+  }
+
+  &:active::before {
+    border: 2px solid $bg-basic-green;
+  }
 }

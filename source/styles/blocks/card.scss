@@ -1,6 +1,32 @@
 .card {
   font-size: 12px;
   line-height: 16px;
+  min-height: 209px;
+  width: 280px;
+
+  &--secondary::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#icon-plus");
+  }
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    background-color: $bg-basic-grey;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+  }
+
+  &--secondary {
+    @media (min-width: $tablet) {
+      background-color: $white-color-text;
+      border: 2px solid $bg-basic-grey;
+    }
+  }
 }
 
 .card__title {

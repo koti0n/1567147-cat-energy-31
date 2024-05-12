@@ -1,5 +1,13 @@
-.instruction {
+.instruction__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .instruction__title {
@@ -13,4 +21,52 @@
 .instruction__description {
   font-size: 14px;
   line-height: 18px;
+}
+
+.instruction__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-basic-green;
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    flex-shrink: 0;
+
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+  }
+
+  &--water::before {
+    background-image: url("../../icons/stack.svg#icon-water");
+  }
+
+  &--food::before {
+    background-image: url("../../icons/stack.svg#icon-eat");
+  }
+
+  &--clock::before {
+    background-image: url("../../icons/stack.svg#icon-clock");
+  }
+
+  @media (min-width: $tablet) {
+    display: block;
+    width: 246px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 230px;
+  }
 }

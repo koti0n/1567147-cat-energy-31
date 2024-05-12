@@ -4,3 +4,15 @@
   font-size: 20px;
   line-height: 20px;
 }
+
+.main-nav__toggle {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

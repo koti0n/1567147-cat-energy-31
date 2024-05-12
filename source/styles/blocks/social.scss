@@ -1,3 +1,33 @@
 .social {
+}
 
+.social__link {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: $icon-grey-color;
+    transition: all 0.5s;
+  }
+
+  &--vkontakte::before {
+    mask-image: url("../../icons/stack.svg#vkontakte");
+  }
+
+  &--youtube::before {
+    mask-image: url("../../icons/stack.svg#youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../../icons/stack.svg#telegram");
+  }
+
+  &:hover::before {
+    background-color: $bg-basic-green;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }

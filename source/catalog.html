@@ -17,9 +17,13 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header__logo-wrapper">
-        <a class="main-header__logo logo" href="index.html" alt="logotype"></a>
-        <img class="logo-image" src="#" width="33" height="38" alt="logo-image">
-        <img class="logo-text" src="#" width="101" height="18" alt="logo-text">
+        <a class="main-header__logo logo" href="index.html" alt="logotype">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+          <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
         </a>
       </div>
 
@@ -37,7 +41,7 @@
   <main class="main">
     <section class="catalog">
       <div class="container">
-        <h2 class="catalog__title">Каталог продукции</h2>
+        <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item card">
             <picture>
@@ -263,7 +267,6 @@
           </li>
         </ul>
         <div class="additional__image">
-          <img class="additional__icon" src="#" width="80" height="83" alt="Подарок">
           <p class="additional__promo">Закажите все
             и получите чехол для
             кота в подарок!</p>
@@ -304,7 +307,7 @@
   <footer class="main-footer">
     <div class="container">
       <a class="main-footer__logo-text logo" href="index.html">
-        <img class="logo-text" src="#" width="128" height="24" alt="logo-text">
+        <img class="logo-text" src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -319,12 +322,7 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="#" width="27" height="34" alt="HTML Academy">
-        </a>
-      </div>
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 
