@@ -1,4 +1,9 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
   &::after {
     content: "";
     display: inline-block;
@@ -16,6 +21,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    width: 168px;
   }
 }
 

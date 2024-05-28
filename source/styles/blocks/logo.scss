@@ -9,3 +9,24 @@
     opacity: 0.6;
   }
 }
+
+.logo__text {
+  &--header {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet) {
+    margin-left: 13px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 14px;
+  }
+}
+
+.logo__text--header {
+  @media (min-width: $desktop) {
+    width: 118px;
+    height: 21px;
+  }
+}

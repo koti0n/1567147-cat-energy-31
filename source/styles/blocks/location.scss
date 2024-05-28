@@ -2,6 +2,34 @@
   &--bg-color {
     background-color: $bg-basic-grey;
   }
+
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
+.location__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px auto;
+
+  @media (min-width: $tablet) {
+    padding: 60px 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 565px;
+    min-height: 200px;
+    padding: 60px 78px 60px 80px;
+    background-color: $white-color-text;
+    position: absolute;
+    left: 110px;
+    //????????? как спозиционировать этот блок, чтобы он никуда не ехал
+    top: 95px;
+  }
 }
 
 .location__description {
@@ -10,14 +38,34 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-right: 10px;
+
+  @media (min-width: $tablet) {
+    width: 170px;
+  }
 }
 
 .location__adress-text {
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    text-align: end;
+  }
+
+  &:last-child {
+    margin-top: 20px;
+  }
 }
 
 .location__map {
   display: block;
   margin: 0 auto;
+}
+
+.location__address {
+  @media (min-width: $tablet) {
+    width: 200px;
+  }
 }

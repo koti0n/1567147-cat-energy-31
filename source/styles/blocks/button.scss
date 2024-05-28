@@ -6,6 +6,10 @@
   background-color: $bg-basic-green;
   text-transform: uppercase;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
 
   &--secondary {
     color: $black-color-text;
@@ -15,6 +19,7 @@
   &--big {
     font-size: 20px;
     line-height: 26px;
+    min-height: 54px;
   }
 }
 

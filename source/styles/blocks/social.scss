@@ -1,4 +1,13 @@
 .social {
+  padding: 20px 0;
+  width: 100%;
+  border-top: 1px solid $grey-lite-line;
+  border-bottom: 1px solid $grey-lite-line;
+
+  @media (min-width: $tablet) {
+    border: none;
+    width: auto;
+  }
 }
 
 .social__link {
@@ -30,4 +39,14 @@
   &:active::before {
     opacity: 0.3;
   }
+}
+
+.social__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 132px;
 }

@@ -14,32 +14,51 @@
   background-color: $bg-basic-grey;
   position: relative;
   margin-bottom: 20px;
+  padding: 30px 30px 18px 20px;
+  min-height: 266px;
+  // ?????????????
 
+  @media (min-width: $tablet) {
+    min-height: 372px;
+    padding: 77px 316px 53px 53px;
+    margin-bottom: 30px;
 
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    top: 0;
-    left: 0;
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    padding: 77px 60px 55px 52px;
+    margin-bottom: 71px;
   }
 
   &::before {
+    content: "";
+    display: block;
     width: 67px;
     height: 50px;
     background-repeat: no-repeat;
-    position: relative;
-    z-index: 2;
-    background-position: 50% 50%;
+    position: absolute;
+    top: 21px;
+    left: 20px;
 
     @media (min-width: $tablet) {
       width: 268px;
       height: 194px;
+      left: unset;
+      right: 28px;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     @media (min-width: $desktop) {
       width: 134px;
       height: 97px;
+      left: 52px;
+      top: 47px;
+      transform: translateY(0);
     }
   }
 
@@ -51,28 +70,24 @@
     background-image: url("../../icons/stack.svg#cat-pro");
   }
 
-  &::after {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $bg-basic-green;
-    position: absolute;
-    transform: translate(20%, 0%);
+  // &::after {
+  //   width: 50px;
+  //   height: 50px;
+  //   border-radius: 50%;
+  //   background-color: $bg-basic-green;
+  //   position: absolute;
+  //   // transform: translate(20%, 0%);
 
-    @media (min-width: $tablet) {
-      width: 200px;
-      height: 200px;
-    }
+  //   @media (min-width: $tablet) {
+  //     width: 200px;
+  //     height: 200px;
+  //   }
 
-    @media (min-width: $desktop) {
-      width: 100px;
-      height: 100px;
-    }
-  }
-
-  @media (min-width: $desktop) {
-    width: 570px;
-  }
+  //   @media (min-width: $desktop) {
+  //     width: 100px;
+  //     height: 100px;
+  //   }
+  // }
 }
 
 .food-line__title {
@@ -82,11 +97,31 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0 0 29px 70px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 73px 214px;
+  }
 }
 
 .food-line__text {
   font-size: 14px;
   line-height: 18px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $grey-lite-line;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
 }
 
 .food-line__link {
@@ -95,13 +130,21 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 
   &::after {
     content: "";
-    display: inline-block;
     width: 32px;
-    height: 10px;
+    height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow");
+    margin-left: 15px;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: auto;
+      margin-left: 25px;
+    }
   }
 
   &:active {
