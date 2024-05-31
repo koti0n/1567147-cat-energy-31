@@ -3,12 +3,12 @@
   border: 1px solid black;
   // ?????????????????????
 
-
   @media (min-width: $tablet) {
     position: unset;
+    min-height: 850px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     min-height: 694px;
   }
 
@@ -41,7 +41,6 @@
     }
   }
 }
-
 
 .promo__title {
   font-family: $headers-font;
@@ -79,7 +78,6 @@
     line-height: 20px;
     margin-bottom: 50px;
     margin-left: 90px;
-    // ???????????
   }
 }
 
@@ -111,12 +109,10 @@
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: flex-end;
-    // border: 1px solid black;
   }
 }
 
 .promo__button {
-  width: 100%;
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {

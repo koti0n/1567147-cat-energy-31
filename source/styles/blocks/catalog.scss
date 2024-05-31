@@ -2,21 +2,23 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
 
   @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
-    align-items: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
+    margin-bottom: 71px;
   }
 }
 
 .catalog__item {
   border-bottom: 1px solid #ebebeb;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 60px;
-  }
 }
 
 .catalog__title {

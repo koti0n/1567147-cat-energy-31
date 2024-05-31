@@ -4,6 +4,7 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
+@import "./common/list-reset.scss";
 
 /* BLOCKS */
 @import "./blocks/container.scss";
@@ -28,4 +29,4 @@
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
-
+@import "./blocks/title.scss";

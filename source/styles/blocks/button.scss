@@ -10,9 +10,11 @@
   align-items: center;
   justify-content: center;
   min-height: 40px;
+  width: 100%;
+  border: none;
 
   &--secondary {
-    color: $black-color-text;
+    color: $base-color-text;
     background-color: $bg-basic-grey;
   }
 

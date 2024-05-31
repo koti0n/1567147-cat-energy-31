@@ -1,8 +1,4 @@
 .food-line__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: row wrap;
@@ -16,16 +12,11 @@
   margin-bottom: 20px;
   padding: 30px 30px 18px 20px;
   min-height: 266px;
-  // ?????????????
 
   @media (min-width: $tablet) {
     min-height: 372px;
     padding: 77px 316px 53px 53px;
     margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 45px;
-    }
   }
 
   @media (min-width: $desktop) {
