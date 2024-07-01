@@ -1,3 +1,33 @@
 .main-header {
+  position: relative;
 
+  @media (min-width: $tablet) {
+    position: unset;
+  }
 }
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+  padding-right: 54px;
+
+  @media (min-width: $tablet) {
+    margin-top: 18px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 53px;
+    padding-right: 110px;
+  }
+}
+
+.main-header__logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

@@ -1,6 +1,37 @@
 .additional-card {
   font-size: 14px;
   line-height: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid $special_grey;
+  padding: 13px 0 18px;
+
+  &:first-child {
+    border-top: 1px solid $special_grey;
+  }
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    border-bottom: 1px solid $special_grey;
+    border-left: 1px solid $special_grey;
+    border-right: 1px solid $special_grey;
+    padding: 26px 38px 27px;
+  }
+
+  @media (min-width: $desktop) {
+    border-left: none;
+    border-right: none;
+    padding: 16px 0 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 70px;
+    }
+  }
 }
 
 .additional-card__title {
@@ -10,8 +41,67 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    max-width: 40%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 270px;
+    margin-right: 16px;
+  }
+}
+
+.additional-card__list {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 285px;
+  }
+}
+
+.additional-card__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 13px 0 15px;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: space-between;
+  }
 }
 
 .additional-card__price {
-  text-align: right;
+  @media (min-width: $tablet) {
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 42px;
+    text-align: start;
+  }
+}
+
+.additional-card__button {
+  @media (min-width: $tablet) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 244px;
+    margin-top: 0;
+  }
 }

@@ -1,14 +1,71 @@
 .promotion {
   font-family: $headers-font;
   color: $black-color-text;
-  line-height: 24px;
+  overflow-x: hidden;
 }
 
 .promotion__title {
-  font-weight: 400;
-  font-size: 24px;
+  margin: 39px 0 32px;
+
+  @media (min-width: $tablet) {
+    margin: 80px 40px 66px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 96px 0 72px;
+  }
 }
 
 .promotion__text {
   font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 32px 0 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 66px 0 24px 40px;
+    max-width: 632px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 72px 0 24px;
+    max-width: 100%;
+  }
+}
+
+.promotion__input-mail {
+  width: 100%;
+  margin: 0 0 16px;
+
+  @media (min-width: $tablet) {
+    width: calc(100% - 256px);
+    margin: 0;
+  }
+}
+
+.promotion__button {
+  min-height: 56px;
+
+  @media (min-width: $tablet) {
+    width: 256px;
+    display: inline-block;
+    min-height: 56px;
+  }
+}
+
+.promotion__form {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    width: 632px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 752px;
+    margin-bottom: 104px;
+  }
 }

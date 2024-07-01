@@ -1,5 +1,73 @@
-.food-line {
+.food-line__list {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+  }
+}
 
+.food-line__card {
+  background-color: $bg-basic-grey;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px 30px 18px 20px;
+  min-height: 266px;
+
+  @media (min-width: $tablet) {
+    min-height: 372px;
+    padding: 77px 316px 53px 53px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    padding: 76px 60px 55px 52px;
+    margin-bottom: 27px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 67px;
+    height: 52px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 23px;
+    left: 12px;
+
+    @media (min-width: $tablet) {
+      width: 268px;
+      height: 212px;
+      left: unset;
+      right: 29px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop) {
+      width: 134px;
+      height: 104px;
+      left: 35px;
+      top: 42px;
+      transform: translateY(0);
+    }
+  }
+
+  &--slim::before {
+    background-image: url("../../icons/stack.svg#cat-slim");
+  }
+
+  &--pro::before {
+    background-image: url("../../icons/stack.svg#cat-pro");
+
+    @media (min-width: $tablet) {
+      transform: translateY(-48%);
+    }
+
+    @media (min-width: $desktop) {
+      transform: translateY(0);
+    }
+  }
 }
 
 .food-line__title {
@@ -9,11 +77,38 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0 0 29px 70px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 73px 162px;
+  }
 }
 
 .food-line__text {
   font-size: 14px;
   line-height: 18px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $grey-lite-line;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    padding: unset;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 34px;
+  }
 }
 
 .food-line__link {
@@ -22,8 +117,30 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-}
+  position: relative;
 
-.food-line__card {
-  background-color: $bg-basic-grey;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: auto;
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 12px;
+    background-image: url("../../icons/stack.svg#icon-arrow");
+    margin-left: 15px;
+    position: absolute;
+    left: auto;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: auto;
+      margin-left: 25px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

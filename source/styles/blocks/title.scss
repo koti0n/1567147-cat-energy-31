@@ -1,0 +1,38 @@
+.title {
+  width: fit-content;
+  background-color: $white-color-text;
+  position: relative;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background-color: $bg-basic-green;
+    width: 100vw;
+    transform: translateY(-100%);
+  }
+
+  &::before {
+    left: calc(100% + 40px);
+  }
+
+  &::after {
+    right: calc(100% + 40px);
+  }
+}

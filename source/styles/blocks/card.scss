@@ -1,6 +1,75 @@
 .card {
   font-size: 12px;
   line-height: 16px;
+  min-height: 209px;
+  padding: 12px 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 18px;
+
+  @media (min-width: $tablet) {
+    background: linear-gradient(to top, $bg-basic-grey 84%, $white-color-text 84%);
+    padding: 0 38px 39px;
+    min-height: 511px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    padding: 0 38px 40px;
+    // outline: 1px solid black;
+    row-gap: unset;
+  }
+
+  &--secondary {
+    display: block;
+    padding-top: 26px;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      background: $white-color-text;
+      border: 2px solid $bg-basic-grey;
+      min-height: 428px;
+      align-self: end;
+    }
+
+    .card__title {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 8px;
+
+      @media (min-width: $tablet) {
+        width: 170px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &--secondary::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#icon-plus");
+    margin: 0 auto 24px;
+
+    @media (min-width: $tablet) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.card__wrapper {
+  width: 140px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin-bottom: unset;
+  }
 }
 
 .card__title {
@@ -10,4 +79,89 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 80px;
+  margin-top: 8px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    min-width: 135px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: unset;
+    margin-top: 12px;
+  }
+}
+
+.card__list {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: unset;
+    margin-top: 18px;
+  }
+}
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 3px 0;
+    border-bottom: 1px solid $special_grey;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: unset;
+    padding: 6px 0 7px;
+  }
+}
+
+.card__text {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 21px;
+
+  @media (min-width: $tablet) {
+    margin: unset;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 64px;
+    width: 170px;
+  }
+}
+
+.card__link-image {
+  width: 140px;
+  height: 107px;
+  margin-top: 8px;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 210px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 169px;
+    height: 210px;
+    margin-bottom: unset;
+  }
+}
+
+.card__button {
+  @media (min-width: $desktop) {
+    margin-top: 32px;
+  }
 }

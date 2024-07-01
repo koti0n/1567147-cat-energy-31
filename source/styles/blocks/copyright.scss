@@ -1,3 +1,31 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    background-color: $icon-grey-color;
+    mask-image: url("../../icons/stack.svg#html-academy");
+    mask-size: 27px 34px;
+    transition: all 0.5s;
+  }
+
+  &:hover::after {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: -3px;
+    width: 163px;
+  }
 }
+
