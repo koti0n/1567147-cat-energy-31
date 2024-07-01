@@ -13,6 +13,11 @@
 .logo__text {
   &--header {
     margin: 0 auto;
+
+    @media (min-width: $desktop) {
+      width: 118px;
+      height: 21px;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -21,12 +26,5 @@
 
   @media (min-width: $desktop) {
     margin-left: 14px;
-  }
-}
-
-.logo__text--header {
-  @media (min-width: $desktop) {
-    width: 118px;
-    height: 21px;
   }
 }

@@ -1,15 +1,17 @@
 .promo {
   position: relative;
-  border: 1px solid black;
-  // ?????????????????????
+  padding: 27px 0 0;
 
   @media (min-width: $tablet) {
+    padding: 57px 0 0;
     position: unset;
     min-height: 850px;
   }
 
   @media (min-width: $desktop) {
-    min-height: 694px;
+    min-height: 580px;
+    padding-top: 106px;
+    margin-bottom: 80px;
   }
 
   &::before {
@@ -49,7 +51,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin: 27px 0 25px;
+  margin: 0 0 25px;
 
   @media (min-width: $tablet) {
     max-width: 420px;
@@ -57,8 +59,7 @@
     text-align: start;
     font-size: 60px;
     line-height: 60px;
-    margin: 65px 0 40px;
-    margin-left: 90px;
+    margin: 0 0 40px;
   }
 }
 
@@ -76,39 +77,24 @@
     color: $black-color-text;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 50px;
-    margin-left: 90px;
-  }
-}
-
-.promo__image {
-  display: block;
-
-  @media (min-width: $tablet) {
-    position: relative;
-    top: -90px;
-    z-index: -1;
+    margin: 0 0 50px;
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
-    top: 140px;
-    left: 45%;
-    z-index: 0;
+    margin: 0 0 52px;
   }
 }
 
 .promo__wrapper {
   @media (min-width: $tablet) {
+    padding-left: 90px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
   }
 
   @media (min-width: $desktop) {
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    justify-content: flex-end;
+    padding-left: 80px;
   }
 }
 
@@ -116,7 +102,42 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    min-height: 54px;
     width: 244px;
-    margin-left: 90px;
+    order: 3;
   }
 }
+
+.promo__picture {
+  margin-bottom: 3px;
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet) {
+    width: 709px;
+    height: 609px;
+    margin-bottom: unset;
+    position: relative;
+    margin-top: -102px;
+    left: -90px;
+    z-index: -1;
+    order: 4;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    margin-top: unset;
+    top: 145px;
+    left: 570px;
+    z-index: 0;
+    width: 522px;
+    height: 499px;
+  }
+}
+
+.promo__image {
+  object-fit: cover;
+}
+

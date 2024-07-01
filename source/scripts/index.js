@@ -6,4 +6,3 @@ const navigation = document.querySelector('.main-nav');
 button.onclick = function(){
   navigation.classList.toggle('main-nav--closed');
 };
-

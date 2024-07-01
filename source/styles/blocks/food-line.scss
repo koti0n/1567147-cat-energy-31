@@ -21,34 +21,34 @@
 
   @media (min-width: $desktop) {
     width: 570px;
-    padding: 77px 60px 55px 52px;
-    margin-bottom: 71px;
+    padding: 76px 60px 55px 52px;
+    margin-bottom: 27px;
   }
 
   &::before {
     content: "";
     display: block;
     width: 67px;
-    height: 50px;
+    height: 52px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 21px;
-    left: 20px;
+    top: 23px;
+    left: 12px;
 
     @media (min-width: $tablet) {
       width: 268px;
-      height: 194px;
+      height: 212px;
       left: unset;
-      right: 28px;
+      right: 29px;
       top: 50%;
       transform: translateY(-50%);
     }
 
     @media (min-width: $desktop) {
       width: 134px;
-      height: 97px;
-      left: 52px;
-      top: 47px;
+      height: 104px;
+      left: 35px;
+      top: 42px;
       transform: translateY(0);
     }
   }
@@ -59,26 +59,15 @@
 
   &--pro::before {
     background-image: url("../../icons/stack.svg#cat-pro");
+
+    @media (min-width: $tablet) {
+      transform: translateY(-48%);
+    }
+
+    @media (min-width: $desktop) {
+      transform: translateY(0);
+    }
   }
-
-  // &::after {
-  //   width: 50px;
-  //   height: 50px;
-  //   border-radius: 50%;
-  //   background-color: $bg-basic-green;
-  //   position: absolute;
-  //   // transform: translate(20%, 0%);
-
-  //   @media (min-width: $tablet) {
-  //     width: 200px;
-  //     height: 200px;
-  //   }
-
-  //   @media (min-width: $desktop) {
-  //     width: 100px;
-  //     height: 100px;
-  //   }
-  // }
 }
 
 .food-line__title {
@@ -94,11 +83,11 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 73px 214px;
+    margin: 0 0 73px 162px;
   }
 }
 
@@ -107,11 +96,18 @@
   line-height: 18px;
   padding-bottom: 23px;
   border-bottom: 1px solid $grey-lite-line;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
+    padding: unset;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 34px;
   }
 }
 
@@ -121,8 +117,12 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: auto;
+  }
 
   &::after {
     content: "";
@@ -130,6 +130,8 @@
     height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow");
     margin-left: 15px;
+    position: absolute;
+    left: auto;
 
     @media (min-width: $tablet) {
       font-size: 20px;

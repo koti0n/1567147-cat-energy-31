@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 15px;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -16,16 +16,29 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 58px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 66px;
+    padding-top: 70px;
     padding-bottom: 66px;
   }
 }
 
+.main-footer__social {
+  margin-bottom: 3px;
+
+  // @media (min-width: $tablet) {
+  //   margin-bottom: auto;
+  // }
+}
+
+.main-footer__logo-text {
+  @media (min-width: $tablet) {
+    margin-right: 37px;
+  }
+}

@@ -1,16 +1,26 @@
+.main-header {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    position: unset;
+  }
+}
+
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 65px;
-  // position: relative;
+  padding-right: 54px;
 
   @media (min-width: $tablet) {
-    margin-top: 25px;
+    margin-top: 18px;
+    padding-right: 35px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 55px;
+    margin-top: 53px;
+    padding-right: 110px;
   }
 }
 

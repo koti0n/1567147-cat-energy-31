@@ -1,10 +1,27 @@
+.instruction {
+  @media (min-width: $tablet) {
+    border-bottom: 1px solid $grey-line-color;
+  }
+
+  @media (min-width: $desktop) {
+    border: none;
+  }
+}
+
 .instruction__list {
   counter-reset: number 0;
 
   @media (min-width: $tablet) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 76px;
+    gap: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: unset;
   }
 }
 
@@ -14,16 +31,16 @@
   color: $black-color-text;
   font-size: 36px;
   line-height: 40px;
-  margin: 20px 0 40px;
+  margin: 19px 0 40px;
 
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin: 45px 0 31px;
   }
 }
 
 .instruction__item {
-
   display: flex;
   align-items: center;
   gap: 20px;
@@ -40,6 +57,15 @@
     min-height: 280px;
     padding: 40px 0 13px;
     counter-increment: number 1;
+    margin: 0;
+
+    &:last-child {
+      margin: 0 0 46px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
   }
 
   &::before {

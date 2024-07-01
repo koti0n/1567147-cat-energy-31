@@ -5,10 +5,10 @@
 }
 
 .promotion__title {
-  margin: 40px 0 32px;
+  margin: 39px 0 32px;
 
   @media (min-width: $tablet) {
-    margin: 80px 0 66px;
+    margin: 80px 40px 66px;
   }
 
   @media (min-width: $desktop) {
@@ -25,7 +25,7 @@
   @media (min-width: $tablet) {
     font-size: 24px;
     line-height: 32px;
-    margin: 66px 0 24px;
+    margin: 66px 0 24px 40px;
     max-width: 632px;
   }
 
@@ -41,10 +41,13 @@
 
   @media (min-width: $tablet) {
     width: calc(100% - 256px);
+    margin: 0;
   }
 }
 
 .promotion__button {
+  min-height: 56px;
+
   @media (min-width: $tablet) {
     width: 256px;
     display: inline-block;

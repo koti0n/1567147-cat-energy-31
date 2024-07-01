@@ -6,6 +6,16 @@
   font-size: 24px;
   line-height: 24px;
 
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -15,6 +25,7 @@
     height: 2px;
     background-color: $bg-basic-green;
     width: 100vw;
+    transform: translateY(-100%);
   }
 
   &::before {
@@ -23,15 +34,5 @@
 
   &::after {
     right: calc(100% + 40px);
-  }
-
-  @media (min-width: $tablet) {
-    font-size: 32px;
-    line-height: 32px;
-  }
-
-  @media (min-width: $desktop) {
-    font-size: 40px;
-    line-height: 40px;
   }
 }

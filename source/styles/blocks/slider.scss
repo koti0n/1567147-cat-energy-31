@@ -34,7 +34,7 @@
   border: 0;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: calc(50% - 2px);
   display: block;
   cursor: col-resize;
 
@@ -44,7 +44,7 @@
     display: block;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: calc(50% - 1px);
     transform: translate(-50%, -50%);
   }
 
